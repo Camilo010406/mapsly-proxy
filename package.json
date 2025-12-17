@@ -1,0 +1,25 @@
+{
+  "name": "mapsly-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Camilo010406/mapsly-proxy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Camilo010406/mapsly-proxy/issues"
+  },
+  "homepage": "https://github.com/Camilo010406/mapsly-proxy#readme",
+  "dependencies": {
+    "@vercel/node": "^3.0.0",
+    "node-fetch": "^3.3.2"
+  }
+}
