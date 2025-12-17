@@ -1,8 +1,7 @@
-// api/mapsly-appointment.ts
-import type { VercelRequest, VercelResponse } from "@vercel/node";
+// api/mapsly-appointment.js
 import fetch from "node-fetch";
 
-export default async function handler(req: VercelRequest, res: VercelResponse) {
+export default async function handler(req, res) {
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
   }
@@ -48,12 +47,10 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     });
 
     const text = await mapslyRes.text();
-    let body: any = null;
+    let body = text;
     try {
       body = text ? JSON.parse(text) : text;
-    } catch {
-      body = text;
-    }
+    } catch (_) {}
 
     if (!mapslyRes.ok) {
       return res

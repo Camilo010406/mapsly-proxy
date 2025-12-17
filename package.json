@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/Camilo010406/mapsly-proxy#readme",
   "dependencies": {
-    "@vercel/node": "^3.0.0",
     "node-fetch": "^3.3.2"
   }
 }
