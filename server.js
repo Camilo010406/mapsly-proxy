@@ -19,6 +19,7 @@ app.get("/test", (req, res) => {
 
 // proxy hacia Mapsly
 app.post("/proxy", async (req, res) => {
+    console.log("Incoming headers from HubSpot:", req.headers);
   try {
     const apiKey = process.env.MAPSLY_API_KEY;
     if (!apiKey) {
