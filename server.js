@@ -46,6 +46,8 @@ app.post("/proxy", async (req, res) => {
     res.status(mapslyResponse.status).json(mapslyResponse.data);
   } catch (err) {
     console.error(err.response?.data || err.message);
+    console.error("Mapsly error status:", err.response?.status);
+  console.error("Mapsly error data:", err.response?.data);
     res
       .status(err.response?.status || 500)
       .json({
