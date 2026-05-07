@@ -14,6 +14,7 @@ module.exports = async function handler(req, res) {
       state,
       postal_code_new,
       appointment_date_time,
+      end_appointment_time,
       van,
     } = req.body || {};
 
@@ -29,6 +30,7 @@ module.exports = async function handler(req, res) {
         state,
         postal_code_new,
         appointment_date_time,
+        end_appointment_time,
         van,
       },
     ];
